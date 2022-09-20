@@ -80,7 +80,7 @@ export const Forms = () => {
             <span className='avatar-add'>Add an avatar</span>
           </label>
           <button disabled={loading}>Sign up</button>
-          {loading && "Uploading and compressing the image please wait..."}
+          {loading && <span style={{color: "white"}}>please wait...</span>}
           {err && <span style={{color: "white"}}>Something went wrong</span>}
         </form>
         <p>
